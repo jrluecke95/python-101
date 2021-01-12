@@ -3,8 +3,12 @@ def bottom_calc(height):
     bot = 1
     for x in range(height - 1):
         bot += 2
-        print(x)
+        #print(x)
     return bot
 
 bottom = bottom_calc(height)
-print(bottom)
+#iprint(bottom)
+row = 1
+for i in range(height):
+    print("*" * row)
+    row += 2
