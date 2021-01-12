@@ -9,6 +9,8 @@ def bottom_calc(height):
 bottom = bottom_calc(height)
 #iprint(bottom)
 row = 1
+
 for i in range(height):
-    print("*" * row)
+    spacing = int((bottom - row) / 2)
+    print((" " * spacing) + "*" * row + (" " * spacing))
     row += 2
